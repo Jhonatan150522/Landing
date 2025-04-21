@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.iconos{
+  width: 20%;
+  margin: 15px;
+  display: inline-block
+
+}
+.opciones .Boton{
+  background-color: rgb(126, 216, 246);
+  padding: 8px 7px;
+  margin-left: 0px;
+  border-radius: 8px;
+}
+.iconos h1{
+  display: inline-block;
+  margin: 5px;
+}
+.iconos img{
+  width: 30px;
+  display: inline-block;
+
+}
+.opciones{
+  float: right;
+  margin: 10px;
+  
+}
+.opciones a{
+  display: inline-block;
+  text-decoration: none;
+  color: gray;
+  margin: 20px;
+}
+.contenedor2{
+  width: 50%;
+}
+.contenedor2 h2{
+  font-size: 50px;
+  padding: 10PX;
+  margin-left: 10%;
+  margin-top: 30%;
+}
+.contenedor2 p a{
+  margin-left: 10%;
+}
