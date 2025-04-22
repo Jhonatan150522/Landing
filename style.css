@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
 
+}
 
 .iconos{
   width: 20%;
@@ -38,14 +38,53 @@
   margin: 20px;
 }
 .contenedor2{
-  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
 }
 .contenedor2 h2{
-  font-size: 50px;
+  font-size: 40px;
   padding: 10PX;
   margin-left: 10%;
   margin-top: 30%;
+  margin-bottom: 20px;
+
 }
-.contenedor2 p a{
-  margin-left: 10%;
+.text{
+
+  margin-right: 0px;
+  margin-left: 79px;
+  margin-bottom: 104px;
+  margin-top: 100px;
+
+
 }
+.Texto p{
+  color: gray;
+  margin:12px 14px ;
+
+}
+
+.Texto a{
+  background-color: rgb(126, 216, 246);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-block; /* importante para que el margin funcione bien */
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.Imagen img{
+  width: 600px;
+  height: 600px;
+  margin-top: 150px;
+  margin-left: 260px;
+  padding-bottom: 112px;
+  padding-top: 72px;
+  margin-top: 0;
+  display: inline-block;
+} 
