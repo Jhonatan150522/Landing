@@ -1,90 +1,192 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+}
+body {
+  background-color: #059212;
+}
+/* Para dar parametros generales */
+:root {
+  --fon-p: 1.6rem;
+  --fon-T: 80px;
 }
 
-.iconos{
+.contenedor {
+  display: inline-block;
+  width: 100vw;
+}
+
+/* Contenedor de los iconos */
+.Contenedor1 {
+  background-color: #02550bc4;
+  width: 100%;
+  display: inline-block;
+}
+.Contenedor1 a {
+  padding: 8px 7px;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  transition: 1s;
+}
+
+.Contenedor1 a:hover {
+  background-color: rgba(1, 1, 1, 0.27);
+  transition: 1s;
+}
+
+/* Iconos de la derecha */
+.iconos {
   width: 20%;
   margin: 15px;
-  display: inline-block
+  display: inline-block;
+}
 
-}
-.opciones .Boton{
-  background-color: rgb(126, 216, 246);
+/* Boton de la Esquina Izquierda */
+.Boton {
+  background-color: #06d001;
   padding: 8px 7px;
-  margin-left: 0px;
   border-radius: 8px;
+  transition: 1s;
 }
-.iconos h1{
+/* Efecto del boton */
+.Boton:hover {
+  background-color: #f3ff90;
+  transition: 1s;
+  color: rgb(0, 0, 0);
+}
+
+/* Titulo del logo */
+.iconos h1 {
   display: inline-block;
   margin: 5px;
 }
-.iconos img{
+
+/* Icono de Gotica */
+.iconos img {
   width: 30px;
   display: inline-block;
+}
 
-}
-.opciones{
+/* opciones de Ingresar */
+.opciones {
   float: right;
-  margin: 10px;
-  
+  font-size: 1.2rem;
 }
-.opciones a{
+.opciones a {
   display: inline-block;
   text-decoration: none;
-  color: gray;
-  margin: 20px;
+  color: rgb(0, 0, 0);
+  margin: 10px;
 }
-.contenedor2{
+
+/* Este contenedor Contiene los textos y la Imagen */
+.contenedor2 {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 50px;
-}
-.contenedor2 h2{
-  font-size: 40px;
-  padding: 10PX;
-  margin-left: 10%;
-  margin-top: 30%;
-  margin-bottom: 20px;
-
-}
-.text{
-
-  margin-right: 0px;
-  margin-left: 79px;
-  margin-bottom: 104px;
-  margin-top: 100px;
-
-
-}
-.Texto p{
-  color: gray;
-  margin:12px 14px ;
-
+  justify-content: space-between; /* Se para los textos de la imagn */
 }
 
-.Texto a{
-  background-color: rgb(126, 216, 246);
+.Texto {
+  margin-right: 70px;
+}
+
+/* Titulo */
+h2 {
+  font-size: var(--fon-T);
+}
+/* lorem */
+.Texto p {
+  color: rgb(202, 201, 201);
+  margin: 12px 14px;
+  font-size: var(--fon-p);
+}
+
+/* Boton de Get Start */
+.Texto a {
+  background-color: rgb(0, 0, 0);
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  display: inline-block; /* importante para que el margin funcione bien */
+  display: inline-block;
   margin-top: 20px;
   margin-left: 30px;
+  transition: 1s;
 }
 
-.Imagen img{
-  width: 600px;
-  height: 600px;
+.Texto a:hover {
+  background-color: rgba(137, 138, 139, 0.524);
+}
+
+/* Imagen de la persona */
+.Imagen img {
+  width: 100%;
+  height: 100%px;
   margin-top: 150px;
-  margin-left: 260px;
   padding-bottom: 112px;
-  padding-top: 72px;
+  padding-top: 70px;
   margin-top: 0;
   display: inline-block;
-} 
+}
+/* Se Realiza la media Quari para tables*/
+
+@media (max-width: 800px) {
+  /* Titulo del logo */
+  .iconos {
+    display: inline-block;
+    font-size: small;
+  }
+  .iconos h1 {
+    font-size: 1rem;
+
+    position: absolute;
+  }
+
+  .opciones {
+    display: inline-block;
+    margin-right: 0px;
+  }
+  .Texto {
+    margin: 0;
+    display: inline-block;;
+  }
+
+  .Contenedor1 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+
+  .contenedor2 {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+  }
+
+  .contenedor2 h2 {
+    display: inline-block;
+    font-size: 2.6rem;
+  }
+
+  .contenedor2 p {
+    position: relative;
+    font-size: small;
+    width: 250px;
+    margin: 0;
+  }
+  
+  .Imagen{
+    width: 40%;
+    height: 40%;
+    display: inline-block;
+    margin: 0 50px;
+    padding: 0;
+  }
+  .Imagen img{
+    padding: 0px;
+  }
+}
