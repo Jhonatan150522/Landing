@@ -82,13 +82,15 @@ body {
 
 /* Este contenedor Contiene los textos y la Imagen */
 .contenedor2 {
-  display: flex;
   align-items: center;
   padding: 50px;
-  justify-content: space-between; /* Se para los textos de la imagn */
+  justify-content: space-between;/* Se para los textos de la imagn */
 }
 
-
+.Texto{
+  display: inline-block;
+  width: 60%;
+}
 /* Titulo */
 h2 {
   font-size: var(--fon-T);
@@ -118,9 +120,14 @@ h2 {
   background-color: rgba(137, 138, 139, 0.524);
 }
 
-/* Imagen de la Monster */
+.Imagen{
+  display: inline-block;
+  width: 25%;
+}
+
+Imagen de la Monster
 .Imagen img {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   margin-top: 150px;
   padding-bottom: 112px;
@@ -189,7 +196,7 @@ h2 {
 
   .Imagen img{
     padding: 0px;
-    width: 50%;
+    width: 100px;
     height: auto;
   }
 }
@@ -221,7 +228,6 @@ h2 {
 
   .opciones {
     display: none;
-    flex-direction: column;
     background-color: #02550bc4;
     position: absolute;
     top: 60px;
@@ -231,14 +237,14 @@ h2 {
     z-index: 998;
   }
 
-  /* Se muestra el menu si el check box esta acivado */
-  .menu-toggle:checked ~ .opciones {
-    display: flex;
-  }
-
   /* El  estilo de los enlances en modo movil */
   .opciones a {
     display: block;
     margin: 10px 20px;
+  }
+  .Imagen img{
+    width: 200px;
+    height: 400px;
+    margin: 0 auto;
   }
 }
