@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #059212;
+  background-color: rgba(11, 104, 11, 0.731);
 }
 /* Para dar parametros generales */
 :root {
@@ -62,7 +62,7 @@ body {
   margin: 5px;
 }
 
-/* Icono de Gotica */
+/* Icono de monster */
 .iconos img {
   width: 30px;
   display: inline-block;
